@@ -7,6 +7,7 @@ import  { PruebaComponent} from './prueba/prueba.component';
 import { HeaderComponent} from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './components/principal/principal.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PrincipalComponent } from './components/principal/principal.component';
     PruebaComponent,
     HeaderComponent,
     FooterComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule
