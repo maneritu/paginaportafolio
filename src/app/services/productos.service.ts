@@ -22,7 +22,7 @@ export class ProductosService
         res => {
           console.log(res.json())
           this.cargando_productos = false;
-          this.pd
+          this.productos = res.json();
         }
       );
   }
