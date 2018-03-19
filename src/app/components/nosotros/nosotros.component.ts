@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InformacionService } from '../../services/informacion.service';
 
 @Component({
   selector: 'app-nosotros',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class NosotrosComponent{
+  constructor( public _is:InformacionService ){
 
+  }
 
 }
