@@ -11,7 +11,7 @@ export class HeaderComponent {
                public router:Router ){
 
   }
-  public buscarProducto(termino:string)
+  public buscarProducto( termino:string )
   {
     //console.log(termino);
     this.router.navigate(['buscar', termino]);

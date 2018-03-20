@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+//import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ProductosService
 {
-  productos:any[] = [];
+  productos:any = [];
   productos_filtrados:any[] = [];
   cargando_productos:boolean = true;
 
 
-  constructor( private http:Http )
+  constructor( private http:HttpClient )
   {
     this.cargar_productos();
   }
@@ -67,7 +68,7 @@ export class ProductosService
             //console.log(res.json());
             //setTimeout(() => {
             this.cargando_productos = false;
-            this.productos = res.json();
+            this.productos = res;
             //}, 1000);
             resolve();
           }

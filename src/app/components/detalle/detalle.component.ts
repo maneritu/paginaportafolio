@@ -26,7 +26,7 @@ export class DetalleComponent {
           .subscribe(
             res =>
             {
-              this.producto = res.json();
+              this.producto = res;
               //console.log( this.producto );
             }
           )
