@@ -21,6 +21,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
 import { ContactenosComponent } from './components/contactenos/contactenos.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -34,7 +35,8 @@ import { ContactenosComponent } from './components/contactenos/contactenos.compo
     PrincipalComponent,
     NosotrosComponent,
     DetalleComponent,
-    ContactenosComponent
+    ContactenosComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

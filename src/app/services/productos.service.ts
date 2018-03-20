@@ -4,7 +4,6 @@ import { Http } from '@angular/http';
 @Injectable()
 export class ProductosService
 {
-
   productos:any[] = [];
   cargando_productos:boolean = true;
 
@@ -14,15 +13,21 @@ export class ProductosService
     this.cargar_productos();
   }
 
+  public cargar_producto(cod:string){
+    return this.http.get(`https://egresis-1982.firebaseio.com/productos/${ cod }.json`)
+  }
+
   public cargar_productos()
   {
-    this.cargando_productos = true;
+    //this.cargando_productos = true;
     this.http.get('https://egresis-1982.firebaseio.com/productos_idx.json')
       .subscribe(
         res => {
-          console.log(res.json())
-          this.cargando_productos = false;
-          this.productos = res.json();
+          //console.log(res.json());
+          //setTimeout(() => {
+            this.cargando_productos = false;
+            this.productos = res.json();
+          //}, 1000);
         }
       );
   }
